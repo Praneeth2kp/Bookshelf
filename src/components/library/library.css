@@ -1,0 +1,124 @@
+.search {
+    background-image: url('A:\\frontend_devrev\\src\\assets\\iconamoon_search-bold.svg');
+    background-repeat: no-repeat;
+    background-size: 5rem 2rem;
+    background-position: right;
+    border: none;
+    margin: 30px;
+    padding-left: 1.1rem;
+    padding-right: 3rem;
+    width: 24rem;
+    height: 3rem;
+    border-radius: 53.514px;
+    border: 3px solid #D2D2D2;
+    color: #878787;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.filtertab {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+}
+
+.filter1 {
+    border: none;
+    margin: 30px;
+    padding-left: 1rem;
+    padding-right: 1px;
+    width: 130px;
+    height: 3rem;
+    border-radius: 53.514px;
+    border: 3px solid #D2D2D2;
+    color: #878787;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.collections {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    width: 100%;
+
+}
+
+.images {
+    width: 150px;
+    height: 170px;
+}
+
+.books {
+    width: 150px;
+    padding: 10px;
+    background: #FFF;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.book_title {
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128.523%;
+    margin-top: -1%;
+}
+
+.author_name {
+    color: #4D4D4D;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.523%;
+    margin-top: -9%;
+
+}
+
+.add_to_cart {
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #F76B56;
+    background-color: #F76B56;
+    border-radius: 28px;
+    padding: 2.5px 5px;
+
+}
+
+.cart_rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wish {
+    background-image: url("A:\\frontend_devrev\\src\\assets\\Vector.svg");
+    background-size: 10px 10px;
+    border: none;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin-top: 0.2rem;
+    
+}
+
+
+
