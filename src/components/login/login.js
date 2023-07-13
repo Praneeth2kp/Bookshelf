@@ -70,7 +70,7 @@ function Login() {
                 console.log(user);
                 setValue(user.email);
                 localStorage.setItem("email", user.email);
-                navigate("/library")
+                navigate("/")
             })
             .catch((error) => {
                 console.log(error);
