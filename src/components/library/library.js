@@ -3,10 +3,13 @@ import '../library/library.css';
 import axios from 'axios';
 import wish from '../../assets/Vector.svg';
 import Nav from '../navbar/navbar';
+import { auth } from '../../firebase';
 function Library() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [cartItems, setCartItems] = useState([]);
+  const [email, setEmail] =useState(" ");
+  
 
   const handleAddToCart = (book) => {
     setCartItems((prevCartItems) => [...prevCartItems, book]);
@@ -29,12 +32,22 @@ function Library() {
 
   useEffect(() => {
     fetchData();
+    // setEmail(auth.currentUser.email);
   }, [searchTerm]);
 
   const handleSearch = (e) => {
     e.preventDefault();
     fetchData();
   };
+  function truncateText(text, maxLength) {
+    if (!text) {
+      return "";
+    }
+    if (text.length <= maxLength) {
+      return text;
+    }
+    return text.substring(0, maxLength) + "...";
+  }
 
   return (
 
@@ -72,6 +85,7 @@ function Library() {
           </select>
         </div>
       </div>
+    
       <div>
         <div className="collections">
           {data.map((items) => (
@@ -84,8 +98,8 @@ function Library() {
                 />
               </div>
               <div className="book_details">
-                <p className="book_title">{items.volumeInfo.title}</p>
-                <p className="author_name">{items.volumeInfo.authors?.join(', ')}</p>
+                <p className="book_title">{truncateText(items.volumeInfo.title, 20)}</p>
+                <p className="author_name">{truncateText(items.volumeInfo.authors?.join(', '), 50)}</p>
                 <p className="genre">Genre: {items.volumeInfo.categories?.join(', ')}</p>
                 <p className="yop">YOP: {items.volumeInfo.publishedDate}</p>
                 <div className="cart_rating">
