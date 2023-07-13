@@ -38,7 +38,7 @@ function Signup() {
                     <button className="btn-1" type="button" onClick={signup}>SignUp</button>
                 </div>
                 <div className="sign">
-                    <p className="p1"> Already a user?<Link to="/login"> Login Here</Link></p>
+                    <p className="p1"> Already a user?<Link to="/"> Login Here</Link></p>
                     <a href="#">Forget Password</a>
                 </div>
             </form>

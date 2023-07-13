@@ -49,7 +49,7 @@ function Nav() {
                         <button onClick={handlelogout} className='signinbtn'>Logout</button>
                     </div>) : (
                         <div>
-                    <Link className='signinbtn' to="/login">Login</Link>
+                    <Link className='signinbtn' to="/">Login</Link>
 
                         </div>
                     )}
