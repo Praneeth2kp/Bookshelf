@@ -6,7 +6,7 @@ import Nav from '../navbar/navbar';
 import { auth } from '../../firebase';
 function Library() {
   const [data, setData] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('Search your book');
   const [cartItems, setCartItems] = useState([]);
   const [email, setEmail] =useState(" ");
   

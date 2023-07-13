@@ -3,6 +3,7 @@
     font-size: 29px;
     text-align: center;
     font-family: inter;
+    
 }
 
 .tabbar{
@@ -10,6 +11,7 @@
     flex-direction: row;
     gap:2rem;
 }
+
 .library,
 .home{
     border: none;
@@ -29,6 +31,14 @@
 
 }
 
+.pb{
+    display: flex;
+}
+.cart_logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
 .signinbtn {
     width: 6rem;
     height: 2rem;

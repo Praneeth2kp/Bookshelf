@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import '../navbar/navbar.css'
+import cart from '../../assets/fluent_backpack-28-regular.svg'
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase';
 
@@ -38,6 +39,10 @@ function Nav() {
                 <h2 className='logo1'>BookShelf +</h2>
 
             </div>
+            <div className='pb'>
+       
+                <img src={cart} className='cart_logo'></img>
+       
             <div className='signbtns'>
             {auth.currentUser ? (
                     <div>
@@ -49,6 +54,8 @@ function Nav() {
                         </div>
                     )}
             </div>
+            </div>
+            
 
         </div>
     )

@@ -12,7 +12,6 @@ function CartPage({ cartItems }) {
             <li key={item.id}>
               <p>Title: {item.volumeInfo.title}</p>
               <p>Author(s): {item.volumeInfo.authors?.join(', ')}</p>
-              {/* Add more details or formatting as needed */}
             </li>
           ))}
         </ul>
