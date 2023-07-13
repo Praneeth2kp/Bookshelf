@@ -1,4 +1,119 @@
-.form1{
-    margin-left: 35%;
-    margin-right: 30%;
-  }
+.form111 {
+
+  margin-right: 30%;
+  margin-left: 35%;
+  margin-right: 30%;
+  background-color: rgb(221, 214, 214);
+  margin-top: 8%;
+  border-radius: 15px;
+}
+
+.form11 {
+
+  background-color: rgb(221, 214, 214);
+  margin-top: 15%;
+  padding-left: 30px;
+  padding-right: 60px;
+  color: rgba(255, 107, 0, 1);
+  border-radius: 20px;
+}
+
+.title1{
+  color: rgba(255, 107, 0, 1);
+}
+
+input {
+  width: 100%;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.btn-1 {
+  width: 50%;
+  height: 40px;
+  margin-left: 28%;
+  background: rgba(255, 107, 0, 1);
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+}
+
+.btn-2 {
+  width: 105%;
+  height: 40px;
+  background: rgba(255, 107, 0, 1);
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+  border-radius: 20px;
+}
+
+.btn-3 {
+  width: 105%;
+  height: 40px;
+  background: rgba(255, 107, 0, 1);
+  color: #FFF;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-bottom: 20px;
+  border-radius: 20px;
+
+}
+
+h1 {
+  color: #343434;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 40px;
+  padding-top: 40px;
+}
+
+.sign {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+
+.google {
+  display: flex;
+  /* justify-content: space-between; */
+  /* padding-inline: -16rem; */
+
+}
+
+
+.p1 {
+  margin-top: -0.5%;
+  text-decoration: none;
+}
+.p2{
+  text-decoration: none;
+}

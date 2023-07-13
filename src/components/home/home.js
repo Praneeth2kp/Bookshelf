@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import {auth,} from '../../firebase';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
@@ -17,6 +19,9 @@ const Home = () => {
     }
   };
 
+  const email = auth.currentUser.email;
+  const navigate = useNavigate();
+
   useEffect(() => {
     fetchData();
   }, [searchTerm]);
@@ -25,6 +30,11 @@ const Home = () => {
     e.preventDefault();
     fetchData();
   };
+
+  const handlelogout = () => {
+    auth.signOut();
+    navigate('/login');
+  }
 
   const handleAddToCart = (itemId) => {
     console.log(`Item ${itemId} added to cart`);
@@ -42,6 +52,8 @@ const Home = () => {
         />
         <button type="submit">Search</button>
       </form>
+      <h1>{email}</h1>
+      <buttom  onClick={handlelogout} >Logout</buttom>
       <div className="box-1">
         {data.map((item) => (
           <div key={item.id}>

@@ -1,10 +1,10 @@
 import { useState } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import app from "../../firebase";
 import { useNavigate } from "react-router-dom";
-
+import '../signup/signup.css';
 
 function Signup() {
     const auth = getAuth(app);
@@ -16,42 +16,34 @@ function Signup() {
     const signup = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // Signed in 
                 const user = userCredential.user;
                 console.log(user);
                 alert("Created An account");
-                navigate("/home");
-                // ...
+                navigate("/library");
             })
             .catch((error) => {
                 const errorCode = error.code;
-                // const errorMessage = error.message;
                 alert(errorCode)
-                // ..
             });
     }
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // console.log(fullname);
-        console.log(email);
-        // console.log(phone)
-    }
-
 
     return (
         <div>
-            <form className="form1" onSubmit={handleSubmit}>
-                {/* <label>Full Name</label><input type='text' onChange={(e) => setFullname(e.target.value)} /><br></br> */}
-                <label>Email</label><input type='email' onChange={(e) => setEmail(e.target.value)} /><br></br>
-                {/* <label>Phone Number</label><input type='tel' onChange={(e) => setPhone(e.target.value)} /><br></br> */}
-                <label>Password</label><input type='password' onChange={(e) => setPassword(e.target.value)} /><br></br>
-                <label>Confirm Password</label><input type='password' /><br></br>
-                <button type="submit" onClick={signup}>Submit</button>
-                <Link to="/login"><button>Login</button></Link>
+            <form className="form111">
+            <h1>Register for <span className="title1">BookShelf</span></h1>
+                <div className="form11">
+                    <input placeholder="Email ID" type='email' onChange={(e) => setEmail(e.target.value)} /><br></br>
+                    <input placeholder="Password" type='password' onChange={(e) => setPassword(e.target.value)} /><br></br>
+                    <input placeholder="Confirm Password" type='password' /><br></br>
+                    <button className="btn-1" type="button" onClick={signup}>SignUp</button>
+                </div>
+                <div className="sign">
+                    <p className="p1"> Already a user?<Link to="/login"> Login Here</Link></p>
+                    <a href="#">Forget Password</a>
+                </div>
             </form>
         </div>
     )
-
 }
 
 export default Signup;

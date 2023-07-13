@@ -49,76 +49,105 @@
 .collections {
     display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     place-items: center;
     width: 100%;
-
+    background-color: #e6e6e6 ;
 }
 
+
 .images {
-    width: 150px;
-    height: 170px;
+    width: 170px;
+    height: 250px;
 }
 
 .books {
-    width: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
     padding: 10px;
     background: #FFF;
     border-radius: 10px;
     margin-top: 20px;
+    padding-left: 2.4rem;
+}
+
+.book_details{
+    margin-left: 2rem;
 
 }
 
 .book_title {
-    color: #4D4D4D;
-    font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
+    font-family: Popins;
+    font-size: 1rem;
+    font-weight: 600;
     line-height: 128.523%;
-    margin-top: -1%;
+    margin-top: 1%;
+    height:1rem;
 }
 
 .author_name {
     color: #4D4D4D;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 128.523%;
-    margin-top: -9%;
-
+    margin-top: 2rem;
+    height:1rem;
 }
+.genre{
+    height:2rem;
+    font-size: 1rem;
+    font-family: poppins;
+}
+.yop{
+    color: #4D4D4D;
+    height:2rem;
+    font-size: 1rem;
+    font-family: poppins;
+}
+
 
 .add_to_cart {
     color: white;
     text-align: center;
-    font-family: Inter;
-    font-size: 8px;
+    font-family: poppins;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     border: 1px solid #F76B56;
     background-color: #F76B56;
-    border-radius: 28px;
-    padding: 2.5px 5px;
+    border-radius: 25px;
+    padding: 6px 10px;
+    width: 7.5rem;
 
 }
 
-.cart_rating {
+.cart_rating{
     display: flex;
-    justify-content: space-between;
+    height: 3rem;
 }
 
-.wish {
-    background-image: url("A:\\frontend_devrev\\src\\assets\\Vector.svg");
-    background-size: 10px 10px;
-    border: none;
-    background-repeat: no-repeat;
-    background-color: white;
-    margin-top: 0.2rem;
+.imgbtn{
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-top: 3px;
+    color: #F76B56;
+    fill: red; 
     
 }
+.wish{
+    padding: 5px;
+    border-radius: 50px;
+    border: none;
+    margin: 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
-
-
+.likebtn{
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+}
