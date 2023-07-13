@@ -32,8 +32,8 @@ function Nav() {
     return (
         <div className="navbar">
             <div className='tabbar'>
-                <Link to="/home"><button className='home'>Home</button></Link>
-                <Link to="/library"><button className='library'>Library</button></Link>
+                <Link to="/"><button className='home'>Home</button></Link>
+                <Link to="/"><button className='library'>Library</button></Link>
             </div>
             <div>
                 <h2 className='logo1'>BookShelf +</h2>

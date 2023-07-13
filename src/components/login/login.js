@@ -22,7 +22,7 @@ function Login() {
                 const user = userCredential.user;
                 console.log(user);
                 alert("Signed in");
-                navigate("/library");
+                navigate("/");
                 // ...
             })
             .catch((error) => {
@@ -43,7 +43,7 @@ function Login() {
                 alert(value);
 
                 console.log(auth.currentUser.email);
-                navigate("/library")
+                navigate("/")
             })
             .catch((error) => {
                 console.log(error);
